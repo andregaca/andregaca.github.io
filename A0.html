@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta bane = "Author: " content = "Andre">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .button {
+                background-color: darkslateblue;
+                border: 3px;
+                color: rgb(223, 203, 111);
+                padding: 20px;
+                text-align: center;
+                text-decoration:dashed;
+                display: inline-block;
+                font-size: large;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {border-radius: 3px;}
+            .button2 {border-radius: 6px;}
+            .button3 {border-radius: 9px;}
+            .button4 {border-radius: 12px;}
+            .button5 {border-radius: 75%;}
+        </style>
+        <title> Pictures, buttons and forms! </title>
+    </head>
+    <body>
+        <h1> A collections of pictures, buttons and forms! </h1>
+        <h4> By Carlo Garate </h4>
+        <ul> 1. Images: </ul>
+        <li> <img src="/Users/garat/OneDrive/Desktop/Dibujos/Works finished/Facebook posts/face_presentation.png" align=right> </li>
+        <li> <center> <img src="/Users/garat/OneDrive/Desktop/Dibujos/Works finished/Insta Posts/first_curi.jpg"> </center> </li>
+        <li> <img src="/Users/garat/OneDrive/Desktop/Dibujos/Works finished/Insta Posts/AKI.jpg"> </li>
+        <ul> 2. Buttons: </ul>
+        <li>
+            <button class="button button1"> 3px </button>
+            <button class="button button2"> 6px </button>
+            <button class="button button3"> 9px </button>
+            <button class="button button4"> 12px </button>
+            <button class="button button5"> 75% </button>
+        </li>
+        <ul> 3. Forms: </ul>
+        <li>
+            <!--Look at the Google Doc for more info-->
+            From the first 3 pictures, which is your favorite? Choose from the list
+                <select name=favorite size=1>
+                    <option> 1. Parakeet holding a pencil
+                    <option> 2. Redraw of Clone High with Identity V hunters
+                    <option> 3. Artwork of A.K.I. from Street Fighter 6
+                </select>
+            <p>
+            <script src="./script.js"></script> <!--What does this mean?-->
+            <form method=POST action="https://codepen.io/pen/"> <!--What does this mean?-->
+                Wonderful! What is your name? 
+                    <input type=text name=name size=32 maxlength=80>
+                <p>
+                What do you like most about the picture? 
+                    <input type=radio name=quality value="C" > Color
+                    <input type=radio name=quality value="CS"> Composition
+                    <input type=radio name=quality value="D"> Details
+                    <input type=radio name=quality value="T"> Texture
+                    <input type=radio name=quality value="S"> Shape
+                <p> 
+                If you were to buy this picture, how much would you pay for it?
+                    <select name=Prices size=1> 
+                        <option> $5-$10 
+                        <option> $10-$20 
+                        <option> $20-$50 
+                        <option> $50+ 
+                    </select> 
+                <p> 
+                <input type=submit> 
+                </form>
+        </li>
+    </body>
+</html>
